@@ -61,7 +61,7 @@ export const App = () => {
   // Or declare an async function in your component
   const getMyIP = async () => {
       const location = await getIPLocation();
-      return console.log("my location", location);
+      console.log("my location", location);
   };
   
   getMyIP();
@@ -73,6 +73,6 @@ export const App = () => {
 
 ## License
 
-MIT © [HFrontend](https://github.com/HuyFrontend)
+MIT © [WillyVox](https://github.com/WillyVox)
 
 ---

@@ -1,7 +1,7 @@
 {
   "name": "react-ip-location",
   "version": "1.0.24",
-  "description": "Get your ip address and location with a single line of code, get location of a provided ip address",
+  "description": "Get your ip address and location with just a single line of code; get location information of a provided ip address",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -14,19 +14,19 @@
     "pl": "rollup -c --bundleConfigAsCjs && npm publish"
   },
   "keywords": [
-    "location",
     "country",
+    "country code",
     "ip address",
     "ip-location",
-    "country code",
-    "reactjs",
-    "javascript"
+    "location",
+    "javascript",
+    "reactjs"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/HuyFrontend/react-ip-location.git"
+    "url": "https://github.com/WillyVox/react-ip-location.git"
   },
-  "author": "HuyFrontend",
+  "author": "WillyVox",
   "license": "ISC",
   "dependencies": {
     "@types/react": "^18.2.6",
