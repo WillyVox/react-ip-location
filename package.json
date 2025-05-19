@@ -1,6 +1,6 @@
 {
   "name": "react-ip-location",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Get your ip address and location with just a single line of code; get location information of a provided ip address",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
