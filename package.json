@@ -26,7 +26,7 @@
     "clean": "rimraf dist",
     "rollup": "rollup -c --bundleConfigAsCjs",
     "version": "npm version patch",
-    "publish": "npm publish"
+    "pl": "rollup -c --bundleConfigAsCjs && npm publish"
   },
   "keywords": [
     "country",
