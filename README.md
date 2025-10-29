@@ -47,21 +47,20 @@ $ npm install react-ip-location
 
 ```javascript
 import React from 'react';
-import { getIPLocation, checkIPLocation } from 'react-ip-location';
+import { getIPLocation, checkIPLocation, getIPAddress } from 'react-ip-location';
 
 
 export const App = () => {
-  getIPLocation().then(result => {
-    // console.log(result);
-  });
-  checkIPLocation('42.115.92.231').then(result => {
-    // console.log(result);
-  });
-
-  // Or declare an async function in your component
+  
+  // In your component
   const getMyIP = async () => {
-      const location = await getIPLocation();
-      console.log("my location", location);
+      
+      const location = await getIPLocation(); // { ip: "116.255.54.11", country: "AU" }
+      
+      const checkLocation = await checkIPLocation('42.115.92.231'); //  // { ip: "42.115.92.231", country: "AU" }
+
+      const ip = await getIPAddress(); // 116.255.54.11
+
   };
   
   getMyIP();
