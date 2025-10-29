@@ -24,7 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "rollup": "rollup -c --bundleConfigAsCjs",
-    "pl": "rollup -c --bundleConfigAsCjs && npm publish"
+    "version": "npm version patch",
+    "pl": "rollup -c --bundleConfigAsCjs && version && npm publish"
   },
   "keywords": [
     "country",

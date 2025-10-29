@@ -1,2 +1,2 @@
-import { getIPLocation, checkIPLocation } from "./ipLocation";
-export { getIPLocation, checkIPLocation };
+import { getIPLocation, checkIPLocation, getIPAddress } from "./ipLocation";
+export { getIPLocation, checkIPLocation, getIPAddress };
