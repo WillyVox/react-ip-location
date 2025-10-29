@@ -2,12 +2,25 @@
   "name": "react-ip-location",
   "version": "1.0.26",
   "description": "Get your ip address and location with just a single line of code; get location information of a provided ip address",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "rollup": "rollup -c --bundleConfigAsCjs",
@@ -28,12 +41,13 @@
   },
   "author": "WillyVox",
   "license": "ISC",
-  "dependencies": {
-    "@types/react": "^18.2.6",
-    "react": "^18.2.0",
-    "typescript": "^5.0.4"
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
+    "@types/react": "^18.2.6",
+    "react": "^18.2.0",
+    "typescript": "^5.0.4",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
